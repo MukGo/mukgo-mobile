@@ -1,1 +1,16 @@
-node_modules
+# node.js
+node_modules/
+
+coverage/
+package-lock.json
+
+# env
+config.ts
+
+.expo
+.expo-shared
+app.json
+
+# IDE
+.idea/
+.history
