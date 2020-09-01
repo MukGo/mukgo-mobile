@@ -5,7 +5,7 @@ coverage/
 package-lock.json
 
 # env
-config.ts
+config.js
 
 .env
 .expo
