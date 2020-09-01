@@ -1,4 +1,4 @@
-import OverViewScreen from './src/screeens/OverViewScreen';
+import OverViewScreen from './src/screens/OverViewScreen';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
