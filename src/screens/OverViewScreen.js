@@ -18,7 +18,7 @@ const OverViewScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text>hello world!!!</Text>
+      <Text>hello chungang!!!</Text>
       <Text>Results: {results.kind}</Text>
     </View>
   );
