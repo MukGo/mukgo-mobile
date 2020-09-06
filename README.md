@@ -43,7 +43,7 @@ MukGo Mobile with React Native
     git fetch upstream
     git checkout master
     git merge upstream/master
-    git puch origin master
+    git push origin master
 
   ### 3.3. 신규 브랜치에 작업 후 Pull Request 만들기
     소스 수정 작업
