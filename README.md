@@ -27,7 +27,7 @@ MukGo Mobile with React Native
     npm install
 
   ### 2.3. copy config.js
-    cp config.sample.ts config.ts
+    cp config.sample.js config.js
     &
     input Google API_KEY and CHANNEL_ID
 
