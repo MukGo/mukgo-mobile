@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import ChannelList from '../components/ChannelList';
 import subscriptions from '../api/youtube/subscriptions';
 
 const OverViewScreen = () => {
@@ -8,8 +9,8 @@ const OverViewScreen = () => {
 
   const subscriptionApi = async () => {
     const response = await subscriptions();
-    console.log(response);
-    setResults(response);
+    console.log(response.items);
+    setResults(response.items);
   }
 
   useEffect(() => {
@@ -18,8 +19,7 @@ const OverViewScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text>hello chungang!!!</Text>
-      <Text>Results: {results.kind}</Text>
+      <ChannelList title='Channel List' results={results} />
     </View>
   );
 }
