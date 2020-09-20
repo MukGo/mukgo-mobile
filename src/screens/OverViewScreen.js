@@ -5,12 +5,13 @@ import ChannelList from '../components/ChannelList';
 import subscriptions from '../api/youtube/subscriptions';
 
 const OverViewScreen = () => {
-  const [results, setResults] = useState(['test']);
+
+  const [results, setResults] = useState('');
 
   const subscriptionApi = async () => {
-    const response = await subscriptions();
-    console.log(response.items);
-    setResults(response.items);
+    const response = await subscriptions.get('');
+    console.log(response.data.items);
+    setResults(response.data.items);
   }
 
   useEffect(() => {
@@ -28,7 +29,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
   },
 });
