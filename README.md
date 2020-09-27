@@ -48,7 +48,7 @@ MukGo Mobile with React Native
   ### 3.3. 신규 브랜치에 작업 후 Pull Request 만들기
     소스 수정 작업
     git status
-    git check out -b '신규브랜치명' 혹은 git branch '신규브랜치명 && git checkout '신규브랜치명'
+    git checkout -b '신규브랜치명' 혹은 git branch '신규브랜치명 && git checkout '신규브랜치명'
     
     git branch
     git add . 혹은 git add 파일명
